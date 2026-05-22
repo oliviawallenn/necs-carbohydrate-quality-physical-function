@@ -170,13 +170,41 @@ vs. IADL (fully adjusted)
 
 ![Figure 1](outputs/figure1_gee_maineffects_model3.png)
 
-**Figure 2** — Stratified analysis by sex
+This forest plot displays beta coefficients and 95% confidence intervals from fully adjusted generalized estimating equation (GEE) models examining associations between carbohydrate quality measures and longitudinal Instrumental Activities of Daily Living (IADL scores. 
+
+The carbohydrate to fiber ratio demonstrated the strongest inverse association with IADL function, whereas fiber density showed a modest poitive association. GI and GL estimates were closer to the null with wider confidence intervals. 
+
+**Figure 2** — Sex-Stratified GEE Associations with IADL
 
 ![Figure 2](outputs/figure2_stratified_by_sex.png)
 
-**Figure 3** — Stratified analysis by chronic disease burden
+This stratified forest plot compares fully adjusted GEE model estimates seperately among male and female participants. The visualization highlights potential sex-specific differences in the relationship between dietary carbohydrate quality and functional aging outcomes. 
+
+Across several exposures, male participants showed larger magnitude effect estimates and widen confidence intervals, suggesting greater variability is associations within stratified models. 
+
+**Figure 3** — Correlations Among Dietary Variables
 
 ![Figure 3](outputs/figure3_stratified_by_disease.png)
+
+This correlation heatmap displays Pearson correlation coefficients among major dietary carbohydrate quality variables included in the longitudinal modeling workflow. This visualization helps to assess potential collinearity among exposure variables prior to regression modeling. 
+
+The strongest inverse correlation was observed between fiber density and carbohydrate:fiber ratio (r = -0.66), reflecting their conceptual overlap as indicators of carbohydrate quality. Glycemic load and total carbohydrate intake were highly positively correlated (r = 0.91), while glycemic index demonstrated relatively weaker correlations with the remaining variables.
+
+**Figure 4** — Distribution of Carbohydrate to Fiber Ratio
+
+![Figure 4](outputs/figure4_distribution_carbtofiber.png)
+
+This density plot shows how the carb:fiber ratio is distributed across the study sample. Quartiles were created to model predicted IADL score and functional decline across the follow-up. The three dashed red vertical lines are the quartile cut-points — they divide the sample into four equally sized groups, from Q1 on the left (best carbohydrate quality, lowest ratio) to Q4 on the right (worst quality, highest ratio).
+
+The distribution is right-skewed, with most of the participants clustering in the moderate quality range, but there's a meaningful tail of individuals with very high carb:fiber ratios. These are the Q4 participants who consume a lot of carbohydrates relative to fiber.
+
+**Figure 5** — Functional Decline by Carbohydrate Quality
+
+![Figure 5](outputs/figure5_predictedIADL_carbtofiber.png)
+
+This line plot shows predicted IADL trajectories extracted from a linear mixed-effects model, adjusted for age, sex, and education. The lines here are smoothed and represent the average expected trajectory for each group, holding all other variables constant.
+
+All four quartile groups begin at the same IADL level confirming there were no meaningful baseline differences. Over time, the lines fan out and by year 10, Q4 — the group with the worst carbohydrate quality — has declined nearly a full additional IADL point compared to Q1.
 
 ---
 
